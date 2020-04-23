@@ -11,5 +11,8 @@ public class mensagens {
             return escolha;
     }
     
-    
+    public static void mensagemLeitura(){
+        System.out.println("\n\n\n\nDigite o numero da nota que deseja acessar..."
+                + "\nAs notas que estão disponíveis são: \n\n");
+    }
 }

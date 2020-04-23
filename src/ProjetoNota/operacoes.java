@@ -43,6 +43,13 @@ public class operacoes {
         
     }
     
+    public static void lerNotas(String REG2[][]){
+        ProjetoNota.mensagens.mensagemLeitura();
+        for(int i = 0; i < REG2.length; i++){
+            System.out.println("Nota "+(i+1)+": "+REG2[i][0]);
+        }
+    }
+    
     
         
 }
