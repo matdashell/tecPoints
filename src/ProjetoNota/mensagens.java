@@ -11,8 +11,11 @@ public class mensagens {
             return escolha;
     }
     
-    public static void mensagemLeitura(){
-        System.out.println("\n\n\n\nDigite o numero da nota que deseja acessar..."
-                + "\nAs notas que estão disponíveis são: \n\n");
+    public static void mensagemAviso(){
+        System.out.println("Para o programa funcionar corretamente não se esqueça"
+                + "de usar (. , - _) para separar palavras ao invés de espaço...\n"
+                + "pois vetores conseguem armazenar apenas uma char...\n\n\n");
     }
+    
+    
 }
