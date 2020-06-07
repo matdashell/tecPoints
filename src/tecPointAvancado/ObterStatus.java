@@ -35,10 +35,10 @@ public class ObterStatus {
            //a boolena auxStatus ficará true e sera usada na decisão entre "membro" ou
            //"novato".
            if(auxStatus == true){
-               status[cont] = auxNovo[0]+" membro! (=)"; cont ++;
+               status[cont] = auxNovo[0]+" membro!"; cont ++;
                
            }else{
-               status[cont] = auxNovo[0]+" novato! (+)"; cont ++;
+               status[cont] = auxNovo[0]+" novato!"; cont ++;
                
            }
        }
@@ -65,26 +65,26 @@ public class ObterStatus {
            //"saiu".
            
            if(auxStatus == true){}else{
-               status[cont] = auxAntigo[0]+" saiu! (-)"; cont ++;
+               status[cont] = auxAntigo[0]+" saiu!"; cont ++;
            }
        }
         if(x == true){
         for(int i = 0; i < cont; i++){
             aux = status[i].split(" ");
             if("novato!".equals(aux[1])){
-            System.out.println(status[i]);
+            System.out.println("(+) "+status[i]);
                 }
             }
-        for(int i = 0; i < cont; i++){
+        /*for(int i = 0; i < cont; i++){
             aux = status[i].split(" ");
             if("membro!".equals(aux[1])){
-            System.out.println(status[i]);
+            System.out.println("(=) "+status[i]);
                 }
-            }
+            }*/
         for(int i = 0; i < cont; i++){
             aux = status[i].split(" ");
             if("saiu!".equals(aux[1])){
-            System.out.println(status[i]);
+            System.out.println("(-) "+status[i]);
                 }
             }
         }

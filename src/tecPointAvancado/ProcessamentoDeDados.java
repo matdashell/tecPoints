@@ -28,8 +28,9 @@ public class ProcessamentoDeDados {
             for(cont = 0; cont < 4; cont++, aux++){
                 if(cont == 0){dados[i] = save[aux];}else{
                 dados[i] += " "+save[aux];}}
-            cont = 0;
+            cont = 0; //System.out.println(dados[i]);
             }
+        
         }else{save = tecPointAvancado.ProcessamentoDeDados.inputDeDadosAntigos().split(" ");
         dados = new String[(save.length)/4];
         
@@ -37,7 +38,7 @@ public class ProcessamentoDeDados {
             for(cont = 0; cont < 4; cont++, aux++){
                 if(cont == 0){dados[i] = save[aux];}else{
                 dados[i] += " "+save[aux];}}
-            cont = 0;
+            cont = 0; //System.out.println(dados[i]);
             }
         }
     return dados;}
