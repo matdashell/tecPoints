@@ -65,12 +65,16 @@ public class ContribuicaoIndividual {
                  }
                  
                  minimo = tecPointAvancado.CONFIGURACOES.DoacoesNecessarias(3);
+                 
+                 
                  if(minimo <= total3){
                      taxaSemanal[cont] += "\n contribuição de tax concluida com: "+String.valueOf(total3)+" pontos (+)TAX";  
                  }else{
                      verificacao = false;
                      taxaSemanal[cont] += "\n contribuição de tax não concluida com: "+String.valueOf(total3)+" pontos (-)TAX"; 
                  }
+                 
+                 
                  if(x == 0){System.out.println(taxaSemanal[cont]+"\n");
                  }
                  else{
@@ -92,6 +96,7 @@ public class ContribuicaoIndividual {
                       }
                   }
               }
+              
               for(int i = 0; i < completados.length; i++){
                   if(completados[i]!=null){
                   String auxiliar[] = completados[i].split(" ");
@@ -99,8 +104,7 @@ public class ContribuicaoIndividual {
                       System.out.println(completados[i]);
                      }
                   }
-              }
-          }
-         
-    }
-}
+               }
+            }
+         }
+      } 
